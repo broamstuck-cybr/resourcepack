@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="880" height="220" role="img" aria-label="resourcepack architectural banner">
+  <defs>
+    <linearGradient id="bgRes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="55%" stop-color="#0d1420"/>
+      <stop offset="100%" stop-color="#111622"/>
+    </linearGradient>
+    <radialGradient id="glowRes" cx="74%" cy="50%" r="44%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.14"/>
+      <stop offset="55%" stop-color="#e3b341" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridRes" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.6" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="clipRes">
+      <rect width="880" height="220" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipRes)">
+    <rect width="880" height="220" fill="url(#bgRes)"/>
+    <rect width="880" height="220" fill="url(#gridRes)"/>
+    <rect width="880" height="220" fill="url(#glowRes)"/>
+
+    <!-- Left emblem: layered isometric voxel + hex shard -->
+    <g transform="translate(46, 46)">
+      <rect width="54" height="54" rx="10" fill="#111622" stroke="#1e293b" stroke-width="1.5"/>
+      <polygon points="27,11 41,19 27,27 13,19" fill="#39d353" fill-opacity="0.2" stroke="#39d353" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="13,19 27,27 27,43 13,35" fill="#1793d1" fill-opacity="0.16" stroke="#1793d1" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="41,19 41,35 27,43 27,27" fill="#e3b341" fill-opacity="0.16" stroke="#e3b341" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Title -->
+    <g transform="translate(116, 56)">
+      <text x="0" y="18" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.6" fill="#f8fafc">resourcepack</text>
+      <text x="0" y="42" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">Minecraft Resource Pack Archives &amp; FNV-1a Sharded Bank</text>
+    </g>
+
+    <!-- Metric pills -->
+    <g transform="translate(46, 128)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5">
+      <rect x="0" y="0" width="124" height="24" rx="5" fill="#111622" stroke="#1e293b"/>
+      <circle cx="12" cy="12" r="3" fill="#39d353"/>
+      <text x="22" y="15.5" fill="#cbd5e1">3 ZIP ARCHIVES</text>
+
+      <rect x="134" y="0" width="124" height="24" rx="5" fill="#111622" stroke="#1e293b"/>
+      <circle cx="146" cy="12" r="3" fill="#1793d1"/>
+      <text x="156" y="15.5" fill="#cbd5e1">FORMAT 15 -&gt; 84</text>
+
+      <rect x="268" y="0" width="122" height="24" rx="5" fill="#111622" stroke="#1e293b"/>
+      <circle cx="280" cy="12" r="3" fill="#e3b341"/>
+      <text x="290" y="15.5" fill="#cbd5e1">256 FNV SHARDS</text>
+    </g>
+
+    <text x="46" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#64748b">PACKS: demo_v1 · resourcepack_v1 · generated-4.2  |  edunext_bank/</text>
+
+    <!-- Right Artwork: Overlay Stack + 256-Shard Matrix -->
+    <g transform="translate(500, 24)">
+      <rect width="344" height="172" rx="10" fill="#0b101b" fill-opacity="0.94" stroke="#1e293b" stroke-width="1.2"/>
+
+      <!-- Left side inside card: Stacked Pack Overlays -->
+      <g transform="translate(16, 18)">
+        <text x="0" y="10" font-family="ui-monospace, monospace" font-size="9" fill="#94a3b8">PACK OVERLAYS</text>
+
+        <polygon points="62,24 114,42 62,60 10,42" fill="#111622" stroke="#1793d1" stroke-width="1.2">
+          <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0" dur="3.8s" repeatCount="indefinite"/>
+        </polygon>
+        <polygon points="62,48 114,66 62,84 10,66" fill="#111622" stroke="#39d353" stroke-width="1.2"/>
+        <polygon points="62,72 114,90 62,108 10,90" fill="#111622" stroke="#e3b341" stroke-width="1.2"/>
+
+        <text x="12" y="128" font-family="ui-monospace, monospace" font-size="8.5" fill="#cbd5e1">ia_overlay_26_1+</text>
+        <text x="12" y="140" font-family="ui-monospace, monospace" font-size="8.5" fill="#64748b">betterhud · modelengine</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="156" y1="18" x2="156" y2="154" stroke="#1e293b" stroke-width="1"/>
+
+      <!-- Right side inside card: FNV-1a 256 Shard Grid -->
+      <g transform="translate(172, 18)">
+        <text x="0" y="10" font-family="ui-monospace, monospace" font-size="9" fill="#94a3b8">EDUNEXT_BANK :: s_00..ff</text>
+        <!-- 8x6 miniature matrix representing 256 hex shards -->
+        <g transform="translate(0, 22)">
+          <rect x="0" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="20" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="40" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="60" y="0" width="16" height="12" rx="2" fill="#1793d1" fill-opacity="0.25" stroke="#1793d1"/>
+          <rect x="80" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="100" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="120" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="140" y="0" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+
+          <rect x="0" y="17" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="20" y="17" width="16" height="12" rx="2" fill="#39d353" fill-opacity="0.25" stroke="#39d353">
+            <animate attributeName="fill-opacity" values="0.15;0.45;0.15" dur="2.8s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="40" y="17" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="60" y="17" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="80" y="17" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="100" y="17" width="16" height="12" rx="2" fill="#e3b341" fill-opacity="0.22" stroke="#e3b341"/>
+          <rect x="120" y="17" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="140" y="17" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+
+          <rect x="0" y="34" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="20" y="34" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="40" y="34" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="60" y="34" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="80" y="34" width="16" height="12" rx="2" fill="#39d353" fill-opacity="0.22" stroke="#39d353"/>
+          <rect x="100" y="34" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="120" y="34" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="140" y="34" width="16" height="12" rx="2" fill="#1793d1" fill-opacity="0.25" stroke="#1793d1"/>
+
+          <rect x="0" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="20" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="40" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="60" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="80" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="100" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="120" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+          <rect x="140" y="51" width="16" height="12" rx="2" fill="#111622" stroke="#1e293b"/>
+        </g>
+
+        <rect x="0" y="98" width="156" height="36" rx="5" fill="#111622" stroke="#1e293b"/>
+        <text x="10" y="114" font-family="ui-monospace, monospace" font-size="8.5" fill="#e3b341">index.json: total=0</text>
+        <text x="10" y="127" font-family="ui-monospace, monospace" font-size="8.5" fill="#64748b">hash: fnv1a32 · have: []</text>
+      </g>
+    </g>
+
+    <rect x="0.75" y="0.75" width="878.5" height="218.5" rx="14" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  </g>
+</svg>

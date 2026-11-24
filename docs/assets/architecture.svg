@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="880" height="260" role="img" aria-label="resourcepack repository architecture">
+  <defs>
+    <pattern id="gridArchR" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.45"/>
+    </pattern>
+    <marker id="rArrC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1793d1"/>
+    </marker>
+    <marker id="rArrE" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#39d353"/>
+    </marker>
+    <marker id="rArrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#e3b341"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="260" rx="12" fill="#090d16"/>
+  <rect width="880" height="260" rx="12" fill="url(#gridArchR)"/>
+  <rect x="0.75" y="0.75" width="878.5" height="258.5" rx="12" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <text x="24" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="0.8">ARCHITECTURE // DUAL TRACK: MINECRAFT PACKS + EDUNEXT_BANK</text>
+  <line x1="24" y1="38" x2="856" y2="38" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Track A (Top): Minecraft Resource Pack Archives -->
+  <text x="24" y="58" font-family="ui-monospace, monospace" font-size="10" fill="#39d353">TRACK A. ITEMSADDER RESOURCE PACK ARCHIVES (ZIP)</text>
+
+  <g transform="translate(24, 66)">
+    <rect x="0" y="0" width="236" height="86" rx="7" fill="#111622" stroke="#39d353" stroke-width="1.2"/>
+    <text x="12" y="18" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#f8fafc">demo_resourcepack_v1.zip</text>
+    <text x="12" y="32" font-family="ui-sans-serif, sans-serif" font-size="9.5" fill="#94a3b8">4.8 MB · 6,362 files · fmt 46</text>
+    <text x="12" y="50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#f8fafc">resourcepack_v1.zip</text>
+    <text x="12" y="64" font-family="ui-sans-serif, sans-serif" font-size="9.5" fill="#94a3b8">15 MB · 7,508 files · +betterhud</text>
+    <text x="12" y="79" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#39d353">generated-4.2.zip (24 MB · 11,278)</text>
+  </g>
+
+  <path d="M 260 109 L 298 109" fill="none" stroke="#39d353" stroke-width="1.5" marker-end="url(#rArrE)"/>
+
+  <g transform="translate(302, 66)">
+    <rect x="0" y="0" width="246" height="86" rx="7" fill="#111622" stroke="#1793d1" stroke-width="1.2"/>
+    <text x="12" y="18" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" fill="#1793d1">pack.mcmeta Overlay Router</text>
+    <text x="12" y="36" font-family="ui-monospace, monospace" font-size="9.5" fill="#cbd5e1">Base format 46 (range 15..32767)</text>
+    <text x="12" y="52" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">betterhud_1_21_2/4/6 · 1_21_2/5/6</text>
+    <text x="12" y="68" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">ia_overlay_* (legacy..26_1_plus)</text>
+  </g>
+
+  <path d="M 548 109 L 586 109" fill="none" stroke="#1793d1" stroke-width="1.5" marker-end="url(#rArrC)"/>
+
+  <g transform="translate(590, 66)">
+    <rect x="0" y="0" width="266" height="86" rx="7" fill="#111622" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="12" y="18" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" fill="#f8fafc">Asset Namespaces</text>
+    <text x="12" y="36" font-family="ui-monospace, monospace" font-size="9.5" fill="#cbd5e1">minecraft · _iainternal · nexo</text>
+    <text x="12" y="52" font-family="ui-monospace, monospace" font-size="9.5" fill="#cbd5e1">prism_rpg · prism_skyblock</text>
+    <text x="12" y="68" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">modelengine · bettermodel · betterhud</text>
+  </g>
+
+  <!-- Track B (Bottom): edunext_bank -->
+  <text x="24" y="174" font-family="ui-monospace, monospace" font-size="10" fill="#e3b341">TRACK B. EDUNEXT_BANK (SHARDED ANSWER INDEX)</text>
+
+  <g transform="translate(24, 182)">
+    <rect x="0" y="0" width="236" height="58" rx="7" fill="#111622" stroke="#e3b341" stroke-width="1.2"/>
+    <text x="12" y="19" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" fill="#f8fafc">edunext_bank/index.json</text>
+    <text x="12" y="35" font-family="ui-monospace, monospace" font-size="9.5" fill="#cbd5e1">v: 1 · gen: 0 · total: 0</text>
+    <text x="12" y="49" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">hash: fnv1a32 · shards: 256</text>
+  </g>
+
+  <path d="M 260 211 L 298 211" fill="none" stroke="#e3b341" stroke-width="1.5" marker-end="url(#rArrG)"/>
+
+  <g transform="translate(302, 182)">
+    <rect x="0" y="0" width="246" height="58" rx="7" fill="#111622" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="12" y="19" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" fill="#f8fafc">edunext_bank/shards/</text>
+    <text x="12" y="35" font-family="ui-monospace, monospace" font-size="9.5" fill="#cbd5e1">256 hex buckets (s_00..s_ff.json)</text>
+    <text x="12" y="49" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">Initialized (.gitkeep; have: [])</text>
+  </g>
+
+  <path d="M 548 211 L 586 211" fill="none" stroke="#e3b341" stroke-width="1.5" marker-end="url(#rArrG)"/>
+
+  <g transform="translate(590, 182)">
+    <rect x="0" y="0" width="266" height="58" rx="7" fill="#111622" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="12" y="19" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" fill="#f8fafc">Raw / CDN Consumer</text>
+    <text x="12" y="35" font-family="ui-sans-serif, sans-serif" font-size="9.5" fill="#cbd5e1">Queried by Edunext userscripts</text>
+    <text x="12" y="49" font-family="ui-sans-serif, sans-serif" font-size="9.5" fill="#94a3b8">See edunext_bank/README.md</text>
+  </g>
+</svg>
