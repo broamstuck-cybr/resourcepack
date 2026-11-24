@@ -26,7 +26,7 @@ Bản ghi trong shard:
 ## Vòng đời một đáp án
 
 1. Học sinh làm đúng trên Edunext → script học vào kho máy → đưa vào **hộp gửi đóng góp**.
-2. Học sinh bấm `📡 Đóng góp` → xuất file `DongGop-KhoChung_*.json` → gửi cho người gom.
+2. Học sinh bấm `Đóng góp` → xuất file `DongGop-KhoChung_*.json` → gửi cho người gom.
 3. Người gom: bỏ file vào thư mục `contributions/` của bộ tool rồi chạy `node bank_collect.js --commit --push`.
 4. Học sinh khác gặp lại câu đó → script tự tra kho chung → trả ngay (0 token).
 
